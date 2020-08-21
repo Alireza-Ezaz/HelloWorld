@@ -1,0 +1,9 @@
+﻿@using System.Globalization;
+@{
+    PersianCalendar persianCalendar = new PersianCalendar();
+    string persiandate = persianCalendar.GetYear(DateTime.Now) + "/" + persianCalendar.GetMonth(DateTime.Now).ToString("00") + "/" + persianCalendar.GetDayOfMonth(DateTime.Now).ToString("00");
+
+
+
+}
+<h2 style="border:1px solid red;padding:30px">@persiandate</h2>

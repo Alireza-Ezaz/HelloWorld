@@ -1,0 +1,11 @@
+﻿@model IEnumerable<user>
+
+<ul>
+    
+    @foreach (var item in Model) 
+    { 
+      <li>This is @item.FullName with username @item.UserName and password @item.PassWord</li> 
+    }
+
+
+</ul>
